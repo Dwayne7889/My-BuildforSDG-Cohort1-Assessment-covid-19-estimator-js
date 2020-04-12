@@ -1,5 +1,4 @@
-      
-const infectionsByRequestedTime =(data, impact, severeImpact)=>{
+const infectionsByRequestedTime =(data, impact, severeImpact) => {
 
     var obj = JSON.stringify(reportedCases); 
     var currentlyInfected = obj;
@@ -16,7 +15,7 @@ return{
  };
 };
 
-const estimateProjectedInfections =(data, impact, severeImpact)=>{
+const estimateProjectedInfections = (data, impact, severeImpact)=>{
   
     var obj = JSON.stringify(reportedCases); 
     var currentlyInfected = obj;
@@ -33,7 +32,7 @@ const estimateProjectedInfections =(data, impact, severeImpact)=>{
      };
     };
 
-const severeCasesByRequestedTime =(data)=>{
+const severeCasesByRequestedTime = (data) => {
   var data =  Number(infectionsByRequestedTime.data) * 15 / 100;
     
     return{ 
@@ -41,7 +40,7 @@ const severeCasesByRequestedTime =(data)=>{
          };
         };
 
- const hospitalBedsByRequestedTime =(estimateBedSpaceAvailability)=>{
+ const hospitalBedsByRequestedTime = (estimateBedSpaceAvailability)=>{
             return{ 
                 data, 
                 impact,
@@ -49,7 +48,7 @@ const severeCasesByRequestedTime =(data)=>{
              };
             };
         
- const estimateCasesForICU =(estimateCasesForICU)=>{
+ const estimateCasesForICU = (estimateCasesForICU)=>{
                 return{ 
                     data, 
                     impact,
@@ -57,14 +56,14 @@ const severeCasesByRequestedTime =(data)=>{
                  };
                 };
 
- const estimateCasesForVentilators =(estimateCasesForICU)=>{
+ const estimateCasesForVentilators = (estimateCasesForICU)=>{
                     return{ 
                         data, 
                         impact,
                         severeImpact
                      };
                     };
- const estimateDollarsInFlights =(estimateCasesForICU)=>{
+ const estimateDollarsInFlights = (estimateCasesForICU)=>{
                         return{ 
                             data, 
                             impact,
