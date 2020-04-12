@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Coronavirus Estimator</title>
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="../src/css/styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+          $('select').formSelect();
+        });
+        </script>
+        
+</head>
+<body>
+    
+ 
+       
+      <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper blue darken-4">
+          <a href="#" class="brand-logo center">CoronavirusEstimator</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          </ul>
+        </div>
+      </nav>
+  <!-- Body Content -->
+  <div class="row">
+  <div class="col s12 m6 lg6">
+    <h4 class="header blue darken-2 white-text center">Enter Details</h4>
+    <div class="card horizontal">
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>Please enter information here.</p>
+          <p>
+         <div class="input-field col s6">
+            <input id="data-population" type="text" class="validate">
+            <label for="data-population" class="black-text">Population</label>
+          </div>
+        </p>
+          <p> 
+              <div class="input-field col s6">
+            <input id="data-time-to-elapse" type="text" class="validate">
+            <label for="data-time-to-elapse" class="black-text">Time To Elapse</label>
+          </div>
+        </p>
+        <p>
+            <div class="input-field col s6">
+               <input id="data-reported-cases" type="text" class="validate">
+               <label for="data-reported-cases" class="black-text">Reported Cases</label>
+             </div>
+           </p>
+             <p> 
+                 <div class="input-field col s6">
+               <input id="data-total-hospital-beds" type="text" class="validate">
+               <label for="data-total-hospital-beds" class="black-text">Total Hospital Beds</label>
+             </div>
+           </p>
+           <p> 
+            <div class="input-field col s6">
+          <input id="data-period-type" type="text" class="validate">
+          <label for="data-period-type" class="black-text">Period Type</label>
+        </div>
+      </p>
+      <p> 
+        <div class="input-field col s6">
+            <select>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="days">Days</option>
+              <option value="weeks">Weeks</option>
+              <option value="months">Months</option>
+            </select>
+            <label>Select Period Type</label>
+          </div>
+      </p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="green waves-effect waves-light btn right"><i class="material-icons right">send</i>Process Information</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col s12 m6 lg6">
+    <p><br></p>
+    <div class="card-panel orange darken-2">
+      <h5><span class="white-text text-darken-2 col s6 m6 lg6"> <i class="material-icons left">people</i>Currently Infected</span></h5>
+      <h4> <span class="white-text text-darken-2">105486</span></h4>
+    </div>
+    <div class="card-panel  blue darken-2">
+      <h5><span class="white-text text-darken-2 col s6 m6 lg6"> <i class="material-icons left">airline_seat_individual_suite</i>Hospital Beds</span></h5>
+      <h4> <span class="white-text text-darken-2">98955</span></h4>
+    </div>
+    <div class="card-panel red darken-2">
+      <h5><span class="white-text text-darken-2 col s6 m6 lg6"> <i class="material-icons left">local_hospital</i>ICU Care</span></h5>
+      <h4> <span class="white-text text-darken-2">1455</span></h4> </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 
+   
+</body>
+</html>
